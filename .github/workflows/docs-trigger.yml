@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+permissions:
+  actions: write
+
 jobs:
   triggerdocswebsitebuild:
     runs-on: ubuntu-latest
