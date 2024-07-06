@@ -19,8 +19,11 @@ jobs:
         with:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: emteknetnz
+          repositories: docs-test-w1,docs-test-r1
 
       - name: Send API request
+        if: github.repository_owner == 'emteknetnz'
         shell: bash
         run: |
           # https://docs.github.com/en/rest/actions/workflows?apiVersion=2022-11-28#create-a-workflow-dispatch-event
