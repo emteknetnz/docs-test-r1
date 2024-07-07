@@ -1,3 +1,3 @@
-## Test h2 heading
+# Test h1 heading
 
 Lorem ipsum
